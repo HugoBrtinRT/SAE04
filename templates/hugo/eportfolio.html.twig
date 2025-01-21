@@ -1,0 +1,138 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page web{% endblock %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résumé - Projets et Compétences</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #343a40;
+            color: white;
+            font-size: 0.9em;
+            margin-top: auto;
+        }
+        .portfolio-btn {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .portfolio-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>Résumé des Projets et Compétences</h1>
+        <ul>
+            <li><strong>AC11.01 : Maîtrise des lois fondamentales de l’électricité</strong><br>
+                J’ai appris à utiliser la loi d’Ohm et à mesurer des courants et tensions pour diagnostiquer des pannes dans des équipements réseau.
+            </li>
+            <li><strong>AC11.02 : Compréhension de l’architecture des systèmes numériques</strong><br>
+                J’ai étudié les bases du codage binaire, la structure des paquets réseaux, et les principes fondamentaux de l’Internet.
+            </li>
+            <li><strong>AC11.03 : Configuration d’un réseau local</strong><br>
+                J’ai configuré des équipements réseau avec des IP dynamiques et statiques, tout en optimisant la connectivité entre les postes.
+            </li>
+            <li><strong>AC11.04 : Maîtrise des systèmes d’exploitation</strong><br>
+                J’ai appris à interagir avec Linux pour configurer des services réseau comme DHCP et DNS via la ligne de commande.
+            </li>
+            <li><strong>AC11.05 : Identification des dysfonctionnements réseau</strong><br>
+                J’ai diagnostiqué des problèmes de connectivité, comme des conflits d’adresses IP et des câbles défectueux, et proposé des solutions.
+            </li>
+            <li><strong>AC11.06 : Installation d’un poste client</strong><br>
+                J’ai installé un poste Windows en configurant les paramètres réseau et les accès aux ressources partagées.
+            </li>
+            <li><strong>AC12.01 : Mesure et analyse des signaux</strong><br>
+                J’ai mesuré des signaux électriques avec un oscilloscope pour vérifier la qualité des transmissions dans un réseau local.
+            </li>
+            <li><strong>AC12.02 : Caractérisation des systèmes de transmission</strong><br>
+                J’ai analysé des modulations numériques (ASK, PSK) et étudié leur impact sur les performances de transmission.
+            </li>
+            <li><strong>AC12.03 : Déploiement de supports de transmission</strong><br>
+                J’ai réalisé des installations de câblages RJ45 et fibre optique, en respectant les normes de déploiement.
+            </li>
+            <li><strong>AC12.04 : Connexion des systèmes de ToIP</strong><br>
+                J’ai configuré des téléphones IP sur un réseau, en intégrant leur communication avec un serveur PBX.
+            </li>
+            <li><strong>AC12.05 : Communication avec un tiers</strong><br>
+                J’ai présenté à un client la configuration d’un réseau local et expliqué simplement les étapes pour garantir leur compréhension.
+            </li>
+            <li><strong>AC13.01 : Utilisation d’un système informatique</strong><br>
+                J’ai manipulé des systèmes d’exploitation comme Windows et Linux pour gérer des services réseau de base.
+            </li>
+            <li><strong>AC13.02 : Correction et modification de programmes</strong><br>
+                J’ai corrigé un script Python qui triait des adresses IP, en optimisant son fonctionnement pour traiter des fichiers volumineux.
+            </li>
+            <li><strong>AC13.03 : Traduction d’algorithmes</strong><br>
+                J’ai traduit un algorithme de tri et de comptage d’adresses IP en Python, vérifiant sa compatibilité avec des données hétérogènes.
+            </li>
+            <li><strong>AC13.04 : Développement d’un site web</strong><br>
+                J’ai conçu un site web en HTML/CSS intégrant des tableaux dynamiques pour afficher des données réseau.
+            </li>
+            <li><strong>AC13.05 : Gestion des données adaptées</strong><br>
+                J’ai choisi une base de données relationnelle pour stocker et gérer les logs réseau en expliquant mon choix basé sur leur structure.
+            </li>
+            <li><strong>AC13.06 : Travail collaboratif</strong><br>
+                J’ai participé à un projet sur GitHub en gérant des branches, en intégrant les contributions et en respectant les bonnes pratiques collaboratives.
+            </li>
+        </ul>
+    </div>
+</div>
+<footer>
+    &copy; 2025 Projets et Compétences
+</footer>
+
+</body>
+</html>
+{% endblock %}

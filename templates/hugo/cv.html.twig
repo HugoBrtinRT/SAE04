@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page web{% endblock %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résumé - Hugo Bertin</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #343a40;
+            color: white;
+            font-size: 0.9em;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <div style="font-size: 1.2em; line-height: 1.8; color: #495057;">
+        <h1>Résumé - CV Hugo Bertin</h1>
+        <p><strong>Nom :</strong> Hugo Bertin</p>
+        <p><strong>Formation :</strong> BUT Réseau et Télécommunication</p>
+        <p><strong>Compétences :</strong></p>
+        <ul>
+            <li>Réactivité, autonomie, qualités relationnelles</li>
+            <li>Rigueur et organisation</li>
+            <li>Outils informatique (SolidWork, Autocad)</li>
+        </ul>
+        <p><strong>Expériences :</strong></p>
+        <ul>
+            <li>Juillet/Août 2022 et 2023 : Emploi vacances (Maïs) à Ménétrol</li>
+            <li>Juillet/Août 2024 : Métrologie chez Michelin à Ladoux</li>
+        </ul>
+        <p><strong>Parcours scolaire :</strong></p>
+        <ul>
+            <li>Baccalauréat STI2D obtenu en 2024</li>
+            <li>Brevet des collèges obtenu en 2021</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Télécharger mon CV</h2>
+        <form>
+            <label for="name">Nom complet :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Adresse mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <a href="/download" download>
+                <button type="button">Télécharger</button>
+            </a>
+        </form>
+    </div>
+</div>
+
+<footer style="text-align: center; padding: 10px; background-color: #343a40; color: white; font-size: 0.9em; margin-top: auto;">
+    &copy; 2025 Hugo Bertin
+</footer>
+
+</body>
+</html>
+{% endblock %}
